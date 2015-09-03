@@ -1,9 +1,9 @@
 <h1>Posts</h1>
 <p><%= link_to 'New Post', new_post_path %></p>
-<% @posts.each do |i| %>
-<h2><%= i.title %></h2>
-<h3><%= i.author %></h3>
-<p><%= i.body %></p>
+<% @post.each do |post| %>
+<h2><%= post.tite %></h2>
+<h3><%= post.author %></h3>
+<p><%= post.body %></p>
 <%= link_to 'Show post', post_path(post) %>
 <% end %>
 
