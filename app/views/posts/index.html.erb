@@ -5,5 +5,7 @@
 <h3><%= post.author %></h3>
 <p><%= post.body %></p>
 <%= link_to 'Show post', post_path(post) %>
+<%= link_to 'Edit post', edit_post_path(post) %>
+<%= link_to 'Destroy post', post, method: :delete %>
 <% end %>
 
